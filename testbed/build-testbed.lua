@@ -1,4 +1,4 @@
-project "app"
+project "testbed"
    kind "ConsoleApp"
    language "C"
    cdialect "C99"
@@ -11,31 +11,31 @@ project "app"
    {
       "src",
 
-	  -- Include Core
-	  "../core/src"
+	  -- Include fusion
+	  "../fusion/src"
    }
 
    links
    {
-      "core"
+      "fusion"
    }
 
    targetdir ("../bin/" .. OutputDir .. "/%{prj.name}")
    objdir ("../bin/int/" .. OutputDir .. "/%{prj.name}")
 
    filter "configurations:Debug"
-       defines { "DEBUG" }
+       defines { "FS_DEBUG" }
        runtime "Debug"
        symbols "On"
 
    filter "configurations:Release"
-       defines { "RELEASE" }
+       defines { "FS_RELEASE" }
        runtime "Release"
        optimize "On"
        symbols "On"
 
    filter "configurations:Dist"
-       defines { "DIST" }
+       defines { "FS_DIST" }
        runtime "Release"
        optimize "On"
        symbols "Off"

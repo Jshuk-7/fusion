@@ -1,4 +1,4 @@
-#include "core/core.h"
+#include "fusion/core.h"
 
 int main(int argc, char** argv)
 {
