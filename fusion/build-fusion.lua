@@ -9,7 +9,7 @@ project "fusion"
 
    includedirs
    {
-      "src"
+      "src",
    }
 
    links

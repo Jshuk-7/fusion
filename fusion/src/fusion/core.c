@@ -1,8 +1,15 @@
 #include "core.h"
 
-#include <stdio.h>
+#include <raylib.h>
 
-void core_test()
+
+
+void fusion_init()
 {
-    printf("Hello, World!\n");
+    
+}
+
+void fusion_terminate()
+{
+
 }

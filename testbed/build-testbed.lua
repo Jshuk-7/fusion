@@ -17,7 +17,8 @@ project "testbed"
 
    links
    {
-      "fusion"
+      "fusion",
+      "raylib"
    }
 
    targetdir ("../bin/" .. OutputDir .. "/%{prj.name}")
